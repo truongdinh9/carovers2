@@ -24,6 +24,14 @@ function kiemtra() {
                     break;
                 }
             }
+            if(i<=2&&j<=2){
+                if (a[i][j] === b && b === a[i + 2][j+2] && a[1+i][2+j] === b) {
+                    kt = true;
+                    break;
+                }
+            }
+            if(i<=2&&j>=2){if(a[i][j]===b&&a[i+1][j-1]===b&&a[i+2][j-2]){kt = true;
+                break;}}
         }
     if (kt) {
         alert("Người Đánh " + b + " Thắng")
