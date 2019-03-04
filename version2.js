@@ -41,7 +41,7 @@ function kiemtra() {
 for (let i = 0; i < 5; i++) {
     a[i] = [];
     for (let j = 0; j < 5; j++) {
-        a[i][j] = "."
+        a[i][j] = "_"
     }
 }
 inkq();
@@ -49,7 +49,7 @@ inkq();
 function danhx() {
     let i = parseInt(toadoi1.value) - 1;
     let j = parseInt(toadoj1.value) - 1;
-    if (a[i][j] === ".") {
+    if (a[i][j] === "_") {
         a[i][j] = "x";
         inkq();
         b = "x";
@@ -61,7 +61,7 @@ function danhx() {
 function danh0() {
     let i = parseInt(toadoi2.value) - 1;
     let j = parseInt(toadoj2.value) - 1;
-    if (a[i][j] === ".") {
+    if (a[i][j] === "_") {
         a[i][j] = 0;
         inkq();
         b = 0;
